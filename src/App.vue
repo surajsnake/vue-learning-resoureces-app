@@ -1,26 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
+        <TheHeader tittle="Remember Me"></TheHeader>
+        <TheResource></TheResource>
+</template>b
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+     import TheHeader from './components/layouts/TheHeader.vue'
+     import TheResource from './components/learning-resources/TheResource.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name:"App",
+        //register the components
+        components:{
+            TheHeader,
+            TheResource
+
+        },
+       
+    }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
